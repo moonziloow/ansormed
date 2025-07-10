@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 24px 10px;
 }
 .header-logo {
   display: flex;
@@ -28,6 +28,7 @@
   align-items: center;
   gap: 32px;
 }
+
 .header-link {
   list-style: none;
   font-size: 14px;
@@ -35,6 +36,18 @@
   color: #222222;
   letter-spacing: 2px;
 }
+.header-div-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
 .header-buttton {
   padding: 12px 24px;
   background-color: #de2e54;
@@ -51,7 +64,10 @@
   background-color: #0eb4c1;
   padding-top: 29px;
   padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 .hero-section .container {
   display: flex;
   align-items: center;
@@ -152,7 +168,7 @@
 
 .footer {
   background-color: #222222;
-  padding: 24px 0;
+  padding: 24px 10px;
 }
 
 .footer-section {
@@ -182,4 +198,86 @@
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+  .navbar .container {
+    gap: 20px;
+  }
+  .header-buttton {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  .hero-section .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-one-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .section-text {
+    width: 100%;
+    text-align: center;
+  }
+  .section-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .second-section-text {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header-links {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .header-buttton {
+    display: none;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .section-imgdiv img {
+    width: 300px;
+  }
+  .four-section-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .four-section-title {
+    font-size: 28px;
+  }
+  .four-section-button {
+    width: 250px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .section-title {
+    font-size: 20px;
+  }
+  .four-section-title {
+    font-size: 20px;
+  }
 }
